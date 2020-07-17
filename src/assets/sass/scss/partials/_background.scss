@@ -1,0 +1,23 @@
+.bg {
+    &-transparent {
+        background-color: transparent;
+    }
+    &-blanco {
+        background-color: $white;
+    }
+    &-blue {
+        background-color: $blue;
+    }
+    &-blue {
+      background-color: $blue;
+    }
+    &-orange {
+      background-color: $orange;
+    }
+    &-gray {
+      background-color: $gray;
+    }
+    &-grayLight{
+      background-color: #ebebeb;
+    }
+}

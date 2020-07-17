@@ -1,0 +1,18 @@
+@-moz-document url-prefix(){}
+//query for internet explorer
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+  /*
+  .img-responsive{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  */
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  /*
+  .img-responsive{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  */
+}

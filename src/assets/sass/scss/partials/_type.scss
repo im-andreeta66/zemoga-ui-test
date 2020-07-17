@@ -1,0 +1,90 @@
+.text {
+    font-weight: normal;
+    line-height: 1.2em;
+    //12px
+    &--12pt {
+        font-size: 0.8571428571428571em;
+        @media #{$m1200} {
+            font-size: 0.75em;
+        }
+    }
+    &--14pt {
+        font-size: 1em;
+        @media #{$m1200} {
+            font-size: 0.875em;
+        }
+    }
+    &--16pt {
+        font-size: 1.1428571428571428em;
+        @media #{$m1200} {
+            font-size: 1em;
+        }
+    }
+    &--20pt {
+        font-size: 1.4285714285714286em;
+        @media #{$m1200} {
+            font-size: 1.25em
+        }
+    }
+    &--30pt{
+        font-size: 2.142857142857143em;
+        @media #{$m1200} {
+            font-size: 1.875em;
+        }
+    }
+    &--40pt {
+        font-size: 2.857142857142857em;
+        @media #{$m1200} {
+          font-size: 2.5em;
+        }
+    }
+    &--45pt {
+        font-size: 3.2142857142857144em;
+        @media #{$m1200} {
+            font-size: 2.8125em;
+        }
+    }
+    //COLOR TEXTO
+    &--white {
+        color: $white;
+    }
+    &--blue {
+        color: $blue;
+    }
+    &--orange {
+        color: $orange;
+    }
+    &--gray {
+        color: $gray;
+    }
+    // FONT WIGHT LIGHT
+    &--light {
+        font-weight: 300;
+    }
+    // FONT WIGHT REGULAR
+    &--regular {
+        font-weight: 400;
+    }
+    // FONT WIGHT BOLD
+    &--bold {
+        font-weight: 700;
+    }
+}
+
+.link {
+    background: none;
+    font-weight: 400;
+    outline: none;
+    line-height: 1.2em;
+    margin: .5em 0;
+    &--none {
+        text-decoration: none;
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+}
+

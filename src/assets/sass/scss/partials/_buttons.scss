@@ -1,0 +1,60 @@
+.btn {
+    align-items: center;
+    display: inline-flex;
+    border-radius: 100px;
+    border-width: 0;
+    letter-spacing: 0;
+    justify-content: center;
+    transition: all 0.3s ease;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    &-border {
+      border: 1px solid $gray;
+      border-radius: 0;
+      box-shadow: none;
+      color: $gray;
+      font-weight: 400;
+      &_white{
+        background-color: transparent;
+        border-color: white;
+        color: white;
+      }
+      &_gray{
+        background-color: transparent;
+        border-color: $gray;
+        color: $gray;
+      }
+    }
+    &-readmore{
+      color: white;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+          color: white;
+          outline: none !important;
+          box-shadow: none !important;
+          text-decoration: underline;
+      }
+    }
+    &-search{
+      background-color: transparent;
+      border: 0;
+      color: white;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+          color: white;
+          outline: none !important;
+          box-shadow: none !important;
+          text-decoration: underline;
+      }
+    }
+}

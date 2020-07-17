@@ -1,0 +1,100 @@
+.card {
+    &-vote{
+      border: 0;
+      border-radius: 0;
+      .card-body {
+        & h2{
+          font-size: 2em;
+        }
+        & figure{
+          margin: 0;
+          &:after{
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+            content: "";
+            left: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+        & .block{
+          bottom: 0;
+          height: 19em;
+          h2{
+            position: relative;
+            & span{
+              font-size: .5em;
+              left: -2.1em;
+              position: absolute;
+              background-color: $blue;
+              padding: .3em;
+              &.bg-orange{
+                background-color: $orange;
+              }
+            }
+          }
+          @media #{$m1200} {
+            height: 19em;
+          }
+
+        }
+      }
+      .card-footer {
+        border: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      @media #{$m1200} {
+        .card-body {
+          & h2{
+            font-size: 3em;
+          }
+          & figure{
+            margin: 0;
+            &:after{
+              /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+              background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+              background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+              content: "";
+              left: 0;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              width: 100%;
+            }
+          }
+          & .block{
+            bottom: 0;
+            height: 19em;
+            h2{
+              position: relative;
+              & span{
+                font-size: .5em;
+                left: -1.9em;
+                position: absolute;
+                background-color: $blue;
+                padding: .3em;
+                &.bg-orange{
+                  background-color: $orange;
+                }
+              }
+            }
+
+
+          }
+        }
+        .card-footer {
+          border: 0;
+          padding: 0;
+        }
+      }
+    }
+
+}

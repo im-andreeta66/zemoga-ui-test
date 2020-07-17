@@ -1,0 +1,26 @@
+// variables, colors, font-family, etc
+$white: #FFFFFF;
+$black: #000000;
+$blue: #1cbbb4;
+$orange: #ffad1d;
+$gray:  #333;
+
+// TIPO DE MEDIAQUERIES
+// SI LA m ES minúscula = min-width
+$m320: 'screen and (min-width: 320px)';
+$m375: 'screen and (min-width: 375px)';
+$m568: 'screen and (min-width: 568px)';
+$m576: 'screen and (min-width: 576px)';
+$m720: 'screen and (min-width: 720px)';
+$m768: 'screen and (min-width: 768px)';
+$m992: 'screen and (min-width: 992px)';
+$m1000: 'screen and (min-width: 1000px)';
+$m1024: 'screen and (min-width: 1024px)';
+$m1200: 'screen and (min-width: 1200px)';
+$m1440: 'screen and (min-width: 1440px)';
+$m1680: 'screen and (min-width: 1680px)';
+$m1920: 'screen and (min-width: 1920px)';
+//
+// FONT FAMILY
+$Lato: 'Lato', sans-serif;
+

@@ -1,0 +1,16 @@
+.form{
+  &-default{
+    & .form-group{
+      & label{
+        color: white;
+        font-size: 1em;
+        font-weight: 400;
+      }
+      & .form-control{
+        background-color: #ebebeb;
+        border-radius: 0;
+      }
+    }
+  }
+
+}

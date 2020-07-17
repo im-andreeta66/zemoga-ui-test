@@ -1,0 +1,58 @@
+// Base Body Styles
+html {
+    font-size: responsive;
+    min-font-size: 14px;
+    max-font-size: 20px;
+    lower-font-range: 420px;
+    upper-font-range: 1920px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    transition: all 1000ms ease-in-out;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    @media #{$m1200} {
+      min-font-size: 16px;
+      max-font-size: 20px;
+    }
+}
+
+body {
+    font-family: $Lato;
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1025px;
+    padding: 0;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+p {
+    line-height: 140%;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    &.list-style {
+        list-style: initial;
+        list-style-type: disc;
+    }
+}
