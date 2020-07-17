@@ -1,0 +1,275 @@
+<header>
+  <nav class="navbar navbar-main navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="row mx-0 w-100 justify-content-between align-items-center">
+        <div class="col-6 col-lg-2">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/images/logo.png" alt="Logo" class="img-fluid w-100 mx-auto d-block">
+          </a>
+        </div>
+
+        <div class="col-4 col-lg-5 px-0">
+          <button class="navbar-toggler text-right float-right text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-menu"></span>
+          </button>
+            <ul class="navbar-nav nav-main justify-content-between text-right w-100 d-none d-lg-inline-flex">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Past Trials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" (click)="openModal()">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" >
+                  <span class="icon-search"></span>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-2 d-lg-none">
+          <button class="d-inline-flex btn-search py-0">
+            <span class="icon-search"></span>
+          </button>
+        </div>
+        <div class="col-12 d-lg-none">
+          <div class="collapse navbar-collapse justify-content-end w-100" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-main justify-content-between text-center w-100">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Past Trials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" >Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--BANNER-->
+<section>
+  <div class="container-full">
+    <div id="carouselExampleCaptions" class="carousel slide sidebar-banner" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/images/banner.jpg" alt="Test" class="img-fluid w-100 mx-auto d-none d-lg-block">
+          <img src="../assets/images/banner-xs.jpg" alt="Test" class="img-fluid w-100 mx-auto d-block d-lg-none">
+          <div class="carousel-caption">
+            <div class="w-100 px-2 px-lg-4 block py-2 py-lg-4">
+              <h5 class="text--light text-white text--16pt mt-2 mb-0">What’s your opinion on</h5>
+              <h1 class="text--bold text-white text--45pt mt-0 mb-3">Pope Francis?</h1>
+              <h4 class="text--light text-white text--20pt mt-0 mb-0 d-none d-lg-block">He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up) </h4>
+              <p class="my-3"><a href="#" class="btn-readmore">
+                More information
+              </a></p>
+              <h4 class="text--bold text-white text--20pt mt-3 mb-0">What’s Your Verdict?</h4>
+            </div>
+
+            <ul class="nav nav-vote nav-vote_xl">
+              <li class="nav-item">
+                <button class="nav-link">
+                  <span class="icon-like"></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link">
+                  <span class="icon-like unlike"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="carrousel-footer">
+          <div class="row mx-0 w-100 align-items-center">
+            <div class="col-6 col-lg-3 bg-opacity bg-gray align-items-center">
+              <h5 class="text--light text-white text--12pt text-right m-0 align-items-center h-100 d-flex justify-content-end">
+                CLOSING IN
+              </h5>
+            </div>
+            <div class="col-6 col-lg-9 bg-opacity bg-white align-items-center">
+              <h3 class="text--light text-gray text--20pt text-left m-0 align-items-center h-100 d-flex justify-content-start">
+                <span class="text--bold">22 </span> days
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--FEATURED-->
+<section>
+  <div class="container">
+    <div class="bg-grayLight my-lg-5 py-3">
+      <div class="row mx-0 w-100 align-items-center">
+        <div class="col-12 col-lg-3">
+          <h4 class="text--light text--20pt text-gray my-0 text-center">{{counted[0].name}}</h4>
+          <h2 class="text--bold text--30pt text-gray my-0 text-center">{{counted[0].subtitle}}</h2>
+        </div>
+        <div class="col-12 col-lg-9">
+          <h5 class="text-left text--light text-gray mt-3 mb-0 my-lg-0">
+            {{counted[0].description}}
+          </h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--CARDS-->
+<section>
+  <div class="container">
+    <h2 class="text-left text-left text-gray text--40pt mb-5">Previous Rulings </h2>
+    <div class="row mx-0 w-100">
+      <div class="col-12 col-lg-6 mb-4" *ngFor="let feature of featured ; let i = index">
+        <div class="card card-vote">
+          <div class="card-body p-0">
+            <figure>
+              <img [src]="feature.imagen" [alt]="feature.name" class="img-fluid">
+            </figure>
+            <div class="block position-absolute pl-5 pr-1 pl-lg-5 pr-lg-3">
+              <h2 class="d-inline-flex align-items-center text--45pt text--regular text-white text-left">
+                <span class="icon-like" *ngIf="feature.vote_positive >= feature.vote_negative"></span>
+                <span class="icon-like unlike bg-orange" *ngIf="feature.vote_negative >= feature.vote_positive"></span>
+                {{feature.name}}
+              </h2>
+              <div class="w-100 ">
+                <p class="text-white text-left text-light text-16pt">
+                  {{feature.description}}
+                </p>
+              </div>
+              <div class="row mx-0 w-100 align-items-center justify-content-start">
+                <div class="col-12 col-lg-10 px-0 d-inline-flex">
+                  <ul class="nav nav-vote nav-vote_md" *ngIf="feature.active != 'active'" >
+                    <li class="nav-item">
+                      <button class="nav-link" (click)="addVote(feature.id);selectVote(feature)" [ngClass]="[feature.selected]">
+                        <span class="icon-like"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" (click)="restVote(feature.id);selectVote(feature)" [ngClass]="[feature.selected]">
+                      <button class="nav-link">
+                        <span class="icon-like unlike"></span>
+                      </button>
+                    </li>
+                  </ul>
+                  <button class="btn-border btn-border_white px-4 py-2 ml-3" (click)="vote(feature)">
+                    Vote now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <ul class="nav nav-vote nav-vote_md">
+              <li class="nav-item"  [style.width.%]="feature.vote_positive">
+                <button class="nav-link" >
+                  <span class="icon-like"></span>
+                  <span class="percent">{{feature.vote_positive}}<span>%</span></span>
+                </button>
+              </li>
+              <li class="nav-item" [style.width.%]="feature.vote_negative">
+                <button class="nav-link" >
+                  <span class="percent">{{feature.vote_negative}}<span>%</span></span>
+                  <span class="icon-like unlike"></span>
+
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--CARDS-->
+<section>
+  <div class="container">
+    <div class="sidebar-newsletter my-4 py-4">
+      <div class="row mx-0 w-100 justify-content-center justify-content-lg-between">
+        <div class="col-12 col-lg-8">
+          <h2 class="text-lg-left text-center text-gray text--30pt my-0">
+            Is there anyone else you would want us to add?
+          </h2>
+        </div>
+        <div class="col-10 col-lg-4 text-lg-right text-center">
+          <button class="btn btn-border btn-border_gray px-4 py-2 text--16pt text-lg-right text-center mt-3 mt-lg-0">
+            Submit a Name
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="mt-5 mb-3 sidebar-footer">
+  <div class="container">
+    <div class="row mx-0 w-100 justify-content-center justify-content-lg-between align-items-center border-top">
+      <div class="col-12 text-lg-left px-0">
+        <ul class="nav nav-footer align-items-center justify-content-center justify-content-lg-start mt-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terms and conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 text-lg-right" >
+        <ul class="nav nav-social align-items-center  justify-content-center justify-content-lg-end mt-3">
+          <li class="nav-item">
+            Follow Us
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="icon-facebook"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="icon-twitter"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal modal-default" *ngIf="statusModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"  (click)="CloseModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-10 mx-auto">
+          <h2 class="text-light text-left text-20pt text-white">Login</h2>
+          <form class="form-default">
+            <div class="form-group">
+
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username or Email">
+            </div>
+            <div class="form-group">
+
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-border btn-border_white px-4">Sign in</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
